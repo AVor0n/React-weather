@@ -1,0 +1,76 @@
+@import "../../styles/variables.scss";
+
+.popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.popup__content {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 200px 450px;
+  background-color: $color-panel-bg;
+  padding: 40px;
+  gap: 20px;
+  border-radius: $border-radius-panel;
+
+  .thisDay {
+    .temperature {
+      font-weight: 500;
+      font-size: 60px;
+      margin-bottom: 12px;
+      line-height: 73px;
+      color: $color-primary;
+    }
+
+    .dayName {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 12px;
+    }
+
+    .icon {
+      margin-bottom: 12px;
+      svg {
+        width: 53px;
+        height: 53px;
+      }
+    }
+
+    .time,
+    .city {
+      font-size: 15px;
+      line-height: 18px;
+      color: $color-text-pale;
+    }
+  }
+
+  .thisDayInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    svg {
+      transition: 0.5s;
+    }
+
+    &:hover {
+      svg {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
