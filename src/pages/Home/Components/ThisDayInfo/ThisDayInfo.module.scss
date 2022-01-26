@@ -1,0 +1,13 @@
+@import '../../../../styles/variables.scss';
+
+.thisDayInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  border-radius: $border-radius-card;
+  padding: 35px 32px;
+  background-image: url('/images/cloud.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  @include effect-style-panel-shadow;
+}

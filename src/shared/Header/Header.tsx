@@ -1,4 +1,3 @@
-import React from "react";
 import Select, { SelectComponentsConfig, SelectInstance, StylesConfig } from "react-select";
 import GlobalSvgSelector from "../../assets/svg/global/GlobalSvgSelector";
 import s from "./Header.module.scss";
@@ -21,8 +20,9 @@ const Header = (props: Props) => {
     control: (styles) => ({
       ...styles,
       backgroundColor: "rgba(71,147,255,0.2)",
-      width: "194px",
-      height: "37px",
+      width: "fit-content",
+      minWidth: "200px",
+      maxWidth: "250px",
       border: "none",
       borderRadius: "10px",
       zIndex: 100,
@@ -41,7 +41,7 @@ const Header = (props: Props) => {
         <div className={s.changeTheme}>
           <GlobalSvgSelector id="change-theme" />
         </div>
-        <Select defaultValue={selectOptions[0]} options={selectOptions} styles={selectStyles} />
+        <Select placeholder="Выберите город" options={selectOptions} styles={selectStyles} />
       </div>
     </header>
   );

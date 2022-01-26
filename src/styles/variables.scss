@@ -1,0 +1,26 @@
+//*-----------Colors-----------------*/
+
+$color-primary: #4793ff;
+$color-text: #000000;
+$color-text-pale: #939cb0;
+$color-card-bg: #4793ff;
+$color-page-bg: #ffffff;
+$color-panel-bg: #ffffff;
+
+// dark theme
+$color-text-dark: #ffffff;
+$color-card-bg-dark: #2e3035;
+$color-panel-bg-dark: #4f4f4f;
+$color-page-bg-dark: #0d1117;
+
+//*-----------Borders-----------------*/
+
+$border-radius-control: 5px;
+$border-radius-card: 10px;
+$border-radius-panel: 20px;
+
+//*-----------Effects-----------------*/
+
+@mixin effect-style-panel-shadow {
+  box-shadow: 2px 5px 25px -3px #b4b4b440;
+}
