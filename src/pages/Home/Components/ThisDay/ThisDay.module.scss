@@ -13,7 +13,7 @@
   line-height: 30px;
   color: $color-text-pale;
   background-color: $color-panel-bg;
-  @include effect-style-panel-shadow();
+  box-shadow: $effect-shadow;
 
   &__temperature {
     grid-area: temp;

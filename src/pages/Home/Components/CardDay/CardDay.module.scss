@@ -1,0 +1,43 @@
+@import "../../../../styles/variables.scss";
+
+.card-day {
+  padding: 11px;
+  border-radius: $border-radius-card;
+  background-color: $color-card-bg;
+  color: $color-text-pale;
+
+  .label {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-text;
+    margin-bottom: 7px;
+  }
+
+  .date {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 12px;
+  }
+
+  .icon {
+    margin-bottom: 13px;
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .temp-day {
+    color: $color-text;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .temp-night{
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+}

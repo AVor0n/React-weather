@@ -9,5 +9,5 @@
   background-image: url('/images/cloud.png');
   background-repeat: no-repeat;
   background-position: top right;
-  @include effect-style-panel-shadow;
+  box-shadow: $effect-shadow;
 }

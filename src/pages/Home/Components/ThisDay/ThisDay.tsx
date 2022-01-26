@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import GlobalSvgSelector from "../../../../assets/svg/global/GlobalSvgSelector";
 import s from "./ThisDay.module.scss";
 
-type Weather = "sunny" | "overcast" | "light-rain" | "rain-and-sun" | "rain";
+export type Weather = "sunny" | "overcast" | "light-rain" | "rain-and-sun" | "rain";
 
 type Props = {
   temperature: number;

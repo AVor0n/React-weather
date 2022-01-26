@@ -1,4 +1,6 @@
 import Header from "../../shared/Header/Header";
+import Days from "./Components/Days/Days";
+import Tabs from "./Components/Tabs/Tabs";
 import ThisDay from "./Components/ThisDay/ThisDay";
 import ThisDayInfo from "./Components/ThisDayInfo/ThisDayInfo";
 import s from "./Home.module.scss";
@@ -9,6 +11,7 @@ const Home = ({}: Props) => {
   return (
     <div className={s.home}>
       <Header />
+
       <div className={s.container}>
         <ThisDay temperature={20} city={"Москва"} weather="sunny" />
         <ThisDayInfo
@@ -18,6 +21,8 @@ const Home = ({}: Props) => {
           wind="3 м/с юго-запад - легкий ветер"
         />
       </div>
+
+      <Days daysInfo={[]} />
     </div>
   );
 };
