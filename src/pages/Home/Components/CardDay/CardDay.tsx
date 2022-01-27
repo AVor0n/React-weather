@@ -1,4 +1,4 @@
-import GlobalSvgSelector from "../../../../assets/svg/global/GlobalSvgSelector";
+import GlobalSvgSelector from "../../../../shared/GlobalSvgSelector";
 import { Weather } from "../ThisDay/ThisDay";
 import s from "./CardDay.module.scss";
 

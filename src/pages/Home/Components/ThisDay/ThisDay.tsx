@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import GlobalSvgSelector from "../../../../assets/svg/global/GlobalSvgSelector";
+import GlobalSvgSelector from "../../../../shared/GlobalSvgSelector";
 import s from "./ThisDay.module.scss";
 
 export type Weather = "sunny" | "overcast" | "light-rain" | "rain-and-sun" | "rain";

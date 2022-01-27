@@ -1,4 +1,4 @@
-import GlobalSvgSelector from "../../assets/svg/global/GlobalSvgSelector";
+import GlobalSvgSelector from "../GlobalSvgSelector";
 import { Weather } from "../../pages/Home/Components/ThisDay/ThisDay";
 import ThisDayInfoLine from "../../pages/Home/Components/ThisDayInfoLine/ThisDayInfoLine";
 import s from "./Popup.module.scss";

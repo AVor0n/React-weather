@@ -25,7 +25,7 @@ const Home = ({}: Props) => {
 
       <Days daysInfo={[]} />
 
-      <Popup
+      {/* <Popup
         city="Москва"
         temp="20"
         time="22:34"
@@ -35,7 +35,7 @@ const Home = ({}: Props) => {
         pressure="765 мм ртутного столба - нормальное"
         precipitation="Без осадков"
         wind="3 м/с юго-запад - легкий ветер"
-      />
+      /> */}
     </div>
   );
 };

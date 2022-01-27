@@ -1,5 +1,5 @@
 import Select, { SelectComponentsConfig, SelectInstance, StylesConfig } from "react-select";
-import GlobalSvgSelector from "../../assets/svg/global/GlobalSvgSelector";
+import GlobalSvgSelector from "../GlobalSvgSelector";
 import s from "./Header.module.scss";
 
 type Props = {};

@@ -1,4 +1,4 @@
-import GlobalSvgSelector from "../../../../assets/svg/global/GlobalSvgSelector";
+import GlobalSvgSelector from "../../../../shared/GlobalSvgSelector";
 import s from "./ThisDayInfoLine.module.scss";
 
 type Props = {
