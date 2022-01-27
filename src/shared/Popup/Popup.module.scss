@@ -16,10 +16,10 @@
   position: absolute;
   display: grid;
   grid-template-columns: 200px 450px;
-  background-color: $color-panel-bg;
+  background-color: var(--color-panel-bg);
   padding: 40px;
   gap: 20px;
-  border-radius: $border-radius-panel;
+  border-radius: var(--border-radius-panel);
 
   .thisDay {
     .temperature {
@@ -27,13 +27,14 @@
       font-size: 60px;
       margin-bottom: 12px;
       line-height: 73px;
-      color: $color-primary;
+      color: var(--color-primary);
     }
 
     .dayName {
       font-size: 25px;
       line-height: 30px;
       margin-bottom: 12px;
+      color: var(--color-text);
     }
 
     .icon {
@@ -48,7 +49,7 @@
     .city {
       font-size: 15px;
       line-height: 18px;
-      color: $color-text-pale;
+      color: var(--color-text-pale);
     }
   }
 

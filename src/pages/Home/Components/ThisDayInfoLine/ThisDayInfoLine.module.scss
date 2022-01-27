@@ -5,6 +5,7 @@
   align-items: center;
   font-size: 14px;
   gap: 20px;
+  color: var(--color-text);
 
   &__icon {
     width: 38px;
@@ -14,11 +15,11 @@
     justify-content: center;
     border-radius: 50%;
     background-color: #ffffff;
-    box-shadow: $effect-shadow;
+    box-shadow: var(--effect-shadow);
   }
 
   &__label {
-    color: $color-text-pale;
+    color: var(--color-text-pale);
     width: 96px;
   }
 }

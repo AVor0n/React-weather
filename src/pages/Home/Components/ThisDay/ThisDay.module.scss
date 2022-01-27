@@ -11,9 +11,9 @@
   border-radius: 20px;
   font-size: 25px;
   line-height: 30px;
-  color: $color-text-pale;
-  background-color: $color-panel-bg;
-  box-shadow: $effect-shadow;
+  color: var(--color-text-pale);
+  background-color: var(--color-panel-bg);
+  box-shadow: var(--effect-shadow);
 
   &__temperature {
     grid-area: temp;
@@ -21,7 +21,7 @@
     font-size: 96px;
     line-height: 117px;
     height: 106px;
-    color: $color-primary;
+    color: var(--color-primary);
   }
 
   &__dayName {
@@ -29,7 +29,7 @@
     font-size: 40px;
     line-height: 49px;
     margin-bottom: 31px;
-    color: $color-text;
+    color: var(--color-text);
   }
 
   &__time {

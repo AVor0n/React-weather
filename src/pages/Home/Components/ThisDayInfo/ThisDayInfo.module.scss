@@ -4,10 +4,11 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
-  border-radius: $border-radius-card;
+  border-radius: var(--border-radius-panel);
   padding: 35px 32px;
-  background-image: url('/images/cloud.png');
+  background-image: url('/cloud.png');
   background-repeat: no-repeat;
   background-position: top right;
-  box-shadow: $effect-shadow;
+  background-color: var(--color-panel-bg);
+  box-shadow: var(--effect-shadow);
 }

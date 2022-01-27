@@ -14,18 +14,18 @@
   padding: 0 20px;
   font-size: 18px;
   line-height: 35px;
-  border-radius: $border-radius-control;
-  color: $color-text;
-  background-color: $color-page-bg;
-  box-shadow: $effect-shadow;
+  border-radius: var(--border-radius-control);
+  color: var(--color-text);
+  background-color: var(--color-panel-bg);
+  box-shadow: var(--effect-shadow);
   cursor: pointer;
 
   &:hover{
-    box-shadow: $effect-hover;
+    box-shadow: var(--effect-hover);
   }
 
   &.active {
     color: #ffffff;
-    background-color: $color-primary;
+    background-color: var(--color-primary);
   }
 }

@@ -1,25 +1,28 @@
-//*-----------Colors-----------------*/
+:root {
+  //*-----------Colors-----------------*/
+  --color-primary: #4793ff;
+  --color-text-pale: #939cb0;
 
-$color-primary: #4793ff;
-$color-text: #000000;
-$color-text-pale: #939cb0;
-$color-card-bg: #4793ff33;
-$color-panel-bg: #ffffff;
-$color-page-bg: #ffffff;
+  &[theme="light"] {
+    --color-text: #000000;
+    --color-card-bg: #4793ff33;
+    --color-panel-bg: #ffffff;
+    --color-page-bg: #ffffff;
+  }
 
-// dark theme
-$color-text-dark: #ffffff;
-$color-card-bg-dark: #2e3035;
-$color-panel-bg-dark: #4f4f4f;
-$color-page-bg-dark: #0d1117;
+  &[theme="dark"] {
+    --color-text: #ffffff;
+    --color-card-bg: #2e3035;
+    --color-panel-bg: #4f4f4f;
+    --color-page-bg: #0d1117;
+  }
 
-//*-----------Borders-----------------*/
+  //*-----------Borders-----------------*/
+  --border-radius-control: 5px;
+  --border-radius-card: 10px;
+  --border-radius-panel: 20px;
 
-$border-radius-control: 5px;
-$border-radius-card: 10px;
-$border-radius-panel: 20px;
-
-//*-----------Effects-----------------*/
-
-$effect-shadow: 2px 5px 25px -3px #b4b4b440;
-$effect-hover: 0 0 20px 1px #4793ff33;
+  //*-----------Effects-----------------*/
+  --effect-shadow: 2px 5px 25px -3px #b4b4b440;
+  --effect-hover: 0 0 20px 1px #4793ff33;
+}

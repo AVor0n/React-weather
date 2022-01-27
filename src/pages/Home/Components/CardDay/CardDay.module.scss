@@ -2,19 +2,19 @@
 
 .card-day {
   padding: 11px;
-  border-radius: $border-radius-card;
-  background-color: $color-card-bg;
-  color: $color-text-pale;
+  border-radius: var(--border-radius-card);
+  background-color: var(--color-card-bg);
+  color: var(--color-text-pale);
 
   &:hover{
-    box-shadow: $effect-shadow;
+    box-shadow: var(--effect-shadow);
   }
 
   .label {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    color: $color-text;
+    color: var(--color-text);
     margin-bottom: 7px;
   }
 
@@ -33,7 +33,7 @@
   }
 
   .temp-day {
-    color: $color-text;
+    color: var(--color-text);
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
