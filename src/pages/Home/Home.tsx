@@ -1,7 +1,11 @@
+import { useEffect } from "react";
+import { useTypedDispatch } from "../../hooks/useTypedDispatch";
+import { useTypedSelector } from "../../hooks/useTypedSelector";
 import Header from "../../shared/Header/Header";
 import Popup from "../../shared/Popup/Popup";
+import { selectDayWeatherData } from "../../store/selectors";
+import { fetchDayWeather } from "../../store/thunks/fetchDayWeather";
 import Days from "./Components/Days/Days";
-import Tabs from "./Components/Tabs/Tabs";
 import ThisDay from "./Components/ThisDay/ThisDay";
 import ThisDayInfo from "./Components/ThisDayInfo/ThisDayInfo";
 import s from "./Home.module.scss";
@@ -9,12 +13,21 @@ import s from "./Home.module.scss";
 type Props = {};
 
 const Home = ({}: Props) => {
+  const city = "Orenburg";
+  const dispatch = useTypedDispatch();
+
+  const { weather } = useTypedSelector(selectDayWeatherData);
+
+  useEffect(() => {
+    dispatch(fetchDayWeather(city));
+  }, []);
+
   return (
     <div className={s.home}>
       <Header />
 
       <div className={s.container}>
-        <ThisDay temperature={20} city={"Москва"} weather="sunny" />
+        <ThisDay weather={weather} />
         <ThisDayInfo
           temperature="20° - ощущается как 17°"
           pressure="765 мм ртутного столба - нормальное"
@@ -30,7 +43,6 @@ const Home = ({}: Props) => {
         temp="20"
         time="22:34"
         weather="overcast"
-        dayName="Среда"
         temperature="20° - ощущается как 17°"
         pressure="765 мм ртутного столба - нормальное"
         precipitation="Без осадков"

@@ -1,11 +1,10 @@
 import GlobalSvgSelector from "../../../../shared/GlobalSvgSelector";
-import { Weather } from "../ThisDay/ThisDay";
 import s from "./CardDay.module.scss";
 
 export type DayInfo = {
   label: string;
   date: string;
-  weatherIconId: Weather;
+  weatherIconId: string;
   temperatureNight: string;
   temperatureDay: string;
   weatherLabel: string;

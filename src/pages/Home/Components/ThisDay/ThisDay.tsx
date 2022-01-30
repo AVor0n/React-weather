@@ -1,30 +1,16 @@
-import React, { useEffect, useState } from "react";
 import GlobalSvgSelector from "../../../../shared/GlobalSvgSelector";
+import { Weather } from "../../../../types/Weather";
 import s from "./ThisDay.module.scss";
 
-export type Weather = "sunny" | "overcast" | "light-rain" | "rain-and-sun" | "rain";
-
 type Props = {
-  temperature: number;
-  city: string;
   weather: Weather;
 };
 
-const ThisDay = ({ city, temperature, weather }: Props) => {
-  const [time, setTime] = useState("00:00");
-
-  useEffect(() => {
-    setTime(getTime());
-    const timer = setTimeout(() => setTime(getTime), 60 * 1000);
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [time]);
-
-  function getTime() {
-    let date = new Date();
-    return `${date.getHours()}:${date.getMinutes()}`;
-  }
+const ThisDay = ({ weather }: Props) => {
+  const temperature = Math.round(weather.main.temp);
+  const city = weather.name;
+  const iconId = weather.main.icon;
+  const time = "00:00";
 
   return (
     <div className={s.thisDay}>
@@ -37,7 +23,7 @@ const ThisDay = ({ city, temperature, weather }: Props) => {
         Город: <span>{city}</span>
       </div>
       <div className={s.thisDay__weather}>
-        <GlobalSvgSelector id={weather} />
+        <GlobalSvgSelector id={iconId} />
       </div>
     </div>
   );
