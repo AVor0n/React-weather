@@ -42,7 +42,7 @@ const Days = ({}: Props) => {
     },
     {
       label: "Ср",
-      date: "29 авг",
+      date: "1 сен",
       weatherIconId: "sunny",
       temperatureDay: "+23",
       temperatureNight: "+17",
@@ -50,7 +50,7 @@ const Days = ({}: Props) => {
     },
     {
       label: "Чт",
-      date: "30 авг",
+      date: "2 сен",
       weatherIconId: "rain",
       temperatureDay: "+20",
       temperatureNight: "+14",
@@ -58,7 +58,7 @@ const Days = ({}: Props) => {
     },
     {
       label: "Пт",
-      date: "31 авг",
+      date: "3 сен",
       weatherIconId: "overcast",
       temperatureDay: "+16",
       temperatureNight: "+10",

@@ -6,8 +6,22 @@ const initialState: DayWeather = {
   weather: {
     main: {
       temp: 0,
-      icon: "01d",
+      feels_like: 0,
+      pressure: 0,
     },
+    dt: 0,
+    rain: {
+      "1h": 0,
+    },
+    snow: {
+      "1h": 0,
+    },
+    timezone: 0,
+    wind: {
+      deg: 0,
+      speed: 0,
+    },
+    weather: { icon: "10n" },
     name: "",
   },
   isLoading: false,

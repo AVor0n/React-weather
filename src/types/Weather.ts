@@ -1,8 +1,24 @@
 export type Weather = {
-  main: {
-    temp: number;
+  weather: {
     icon: string;
   };
+  main: {
+    temp: number;
+    feels_like: number;
+    pressure: number;
+  };
+  wind: {
+    speed: number;
+    deg: number;
+  };
+  rain: {
+    "1h": number;
+  };
+  snow: {
+    "1h": number;
+  };
+  dt: number;
+  timezone: number;
   name: string;
 };
 

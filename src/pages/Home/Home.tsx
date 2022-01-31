@@ -28,12 +28,7 @@ const Home = ({}: Props) => {
 
       <div className={s.container}>
         <ThisDay weather={weather} />
-        <ThisDayInfo
-          temperature="20° - ощущается как 17°"
-          pressure="765 мм ртутного столба - нормальное"
-          precipitation="Без осадков"
-          wind="3 м/с юго-запад - легкий ветер"
-        />
+        <ThisDayInfo weather={weather} />
       </div>
 
       <Days daysInfo={[]} />
