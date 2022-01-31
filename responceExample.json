@@ -1,0 +1,47 @@
+[
+  {
+    "weather": [
+      {
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "main": {
+      "temp": -3.99,
+      "feels_like": -9.07,
+      "pressure": 1019
+    },
+    "wind": {
+      "speed": 3.86,
+      "deg": 181
+    },
+    "dt": 1643649943,
+    "timezone": 18000,
+    "name": "Orenburg"
+  },
+  {
+    "weather": [
+      {
+        "main": "Snow",
+        "description": "snow",
+        "icon": "13n"
+      }
+    ],
+    "main": {
+      "temp": -1.23,
+      "feels_like": -4.94,
+      "pressure": 992
+    },
+    "wind": {
+      "speed": 2.96,
+      "deg": 85
+    },
+    "snow": {
+      "1h": 0.56
+    },
+    "dt": 1643650112,
+    "timezone": 10800,
+    "name": "Moscow"
+  }
+]

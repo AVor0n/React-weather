@@ -1,7 +1,7 @@
 import GlobalSvgSelector from "../GlobalSvgSelector";
-import { Weather } from "../../pages/Home/Components/ThisDay/ThisDay";
 import ThisDayInfoLine from "../../pages/Home/Components/ThisDayInfoLine/ThisDayInfoLine";
 import s from "./Popup.module.scss";
+import { Weather } from "../../types/Weather";
 
 type Props = {
   temp: string;

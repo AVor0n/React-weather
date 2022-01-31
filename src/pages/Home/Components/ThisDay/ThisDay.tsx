@@ -5,13 +5,13 @@ import s from "./ThisDay.module.scss";
 
 type Props = {
   weather: Weather;
+  time: string;
+  city: string;
 };
 
-const ThisDay = ({ weather }: Props) => {
+const ThisDay = ({ weather, time, city }: Props) => {
   const { temp } = WeatherAdapter.getTemperature(weather);
-  const city = weather.name;
   const iconId = WeatherAdapter.getIconId(weather);
-  const time = "00:00";
 
   return (
     <div className={s.thisDay}>

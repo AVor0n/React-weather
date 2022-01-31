@@ -28,17 +28,21 @@ class WeatherAdapter {
   static getPrecipitation(weather: Weather, precision = 1) {
     if (weather.snow) {
       const snowVolume = weather.snow["1h"].toFixed(precision);
-      return `снег, ${snowVolume} мм за час`;
+      return `снег - ${snowVolume} мм за час`;
     }
     if (weather.rain) {
       const rainVolume = weather.rain["1h"].toFixed(precision);
-      return `дождь, ${rainVolume} мм за час`;
+      return `дождь - ${rainVolume} мм за час`;
     }
     return "без осадков";
   }
 
   static getIconId(weather: Weather) {
     return weatherIconAdapter(weather.weather.icon);
+  }
+
+  static getTimeZone(weather: Weather) {
+    return weather.timezone;
   }
 }
 

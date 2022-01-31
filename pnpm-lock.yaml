@@ -8,6 +8,7 @@ specifiers:
   '@types/react-router-dom': ^5.3.3
   '@vitejs/plugin-react': ^1.0.7
   axios: ^0.25.0
+  dayjs: ^1.10.7
   normalize.css: ^8.0.1
   react: ^17.0.2
   react-dom: ^17.0.2
@@ -21,6 +22,7 @@ specifiers:
 dependencies:
   '@reduxjs/toolkit': 1.7.1_react-redux@7.2.6+react@17.0.2
   axios: 0.25.0
+  dayjs: 1.10.7
   normalize.css: 8.0.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -574,6 +576,10 @@ packages:
 
   /csstype/3.0.10:
     resolution: {integrity: sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==}
+
+  /dayjs/1.10.7:
+    resolution: {integrity: sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==}
+    dev: false
 
   /debug/4.3.3:
     resolution: {integrity: sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==}

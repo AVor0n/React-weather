@@ -11,6 +11,7 @@ const ThisDayInfo = ({ weather }: Props) => {
   const { temp, feels_like } = WeatherAdapter.getTemperature(weather);
   const { speed, direction, strength } = WeatherAdapter.getWind(weather);
   const { pressure, grade } = WeatherAdapter.getPressure(weather);
+  const precipitation = WeatherAdapter.getPrecipitation(weather);
 
   return (
     <div className={s.thisDayInfo}>
@@ -24,7 +25,7 @@ const ThisDayInfo = ({ weather }: Props) => {
         label="Давление"
         value={`${pressure} мм ртутного столба - ${grade}`}
       />
-      <ThisDayInfoLine iconId="precipitation" label="Осадки" value={`Без осадков`} />
+      <ThisDayInfoLine iconId="precipitation" label="Осадки" value={precipitation} />
       <ThisDayInfoLine
         iconId="wind"
         label="Ветер"
