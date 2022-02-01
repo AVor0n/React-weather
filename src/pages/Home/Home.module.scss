@@ -1,0 +1,11 @@
+.home{
+  font-style: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  display: grid;
+  grid-template-columns: 8fr 15fr;
+  gap: 50px;
+  margin-bottom: 50px;
+}

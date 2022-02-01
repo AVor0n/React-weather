@@ -1,0 +1,26 @@
+@import "../../../../styles/variables.scss";
+
+.tabs {
+  display: flex;
+  gap: 15px;
+}
+
+.tab {
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 35px;
+  border-radius: var(--border-radius-control);
+  color: var(--color-text);
+  background-color: var(--color-panel-bg);
+  box-shadow: var(--effect-shadow);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: var(--effect-hover);
+  }
+
+  &.active {
+    color: #ffffff;
+    background-color: var(--color-primary);
+  }
+}

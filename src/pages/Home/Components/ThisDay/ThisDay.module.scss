@@ -1,0 +1,53 @@
+@import "../../../../styles/variables.scss";
+
+.thisDay {
+  display: grid;
+  grid-template-areas:
+    "temp icon"
+    "day icon"
+    "time time"
+    "city city";
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--color-text-pale);
+  background-color: var(--color-panel-bg);
+  box-shadow: var(--effect-shadow);
+
+  &__temperature {
+    grid-area: temp;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 117px;
+    height: 106px;
+    color: var(--color-primary);
+  }
+
+  &__dayName {
+    grid-area: day;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 31px;
+    color: var(--color-text);
+  }
+
+  &__time {
+    grid-area: time;
+    margin-bottom: 14px;
+  }
+
+  &__city {
+    grid-area: city;
+  }
+
+  &__weather {
+    grid-area: icon;
+    margin-top: 26px;
+    justify-self: end;
+    svg {
+      width: 119px;
+      height: 119px;
+    }
+  }
+}
