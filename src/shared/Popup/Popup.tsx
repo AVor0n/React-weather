@@ -22,9 +22,7 @@ const Popup = (props: Props) => {
         <div className={s.thisDay}>
           <div className={s.temperature}>{props.temp}°</div>
           <div className={s.dayName}>{props.dayName}</div>
-          <div className={s.icon}>
-            <GlobalSvgSelector id={props.weather} />
-          </div>
+          <div className={s.icon}>{/* <GlobalSvgSelector id={props.weather} /> */}</div>
           <div className={s.time}>
             Время: <span>{props.time}</span>
           </div>

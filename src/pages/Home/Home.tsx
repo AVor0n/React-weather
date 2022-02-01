@@ -41,7 +41,7 @@ const Home = ({}: Props) => {
         <ThisDayInfo weather={weather} />
       </div>
 
-      <Days daysInfo={[]} />
+      {/* <Days daysInfo={[]} /> */}
 
       {/* <Popup
         city="Москва"

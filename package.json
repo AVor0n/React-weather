@@ -1,5 +1,5 @@
 {
-  "name": "react_wheather",
+  "name": "react_weather",
   "version": "0.0.0",
   "scripts": {
     "serve": "vite",
