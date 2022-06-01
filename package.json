@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.1",
-    "axios": "^0.25.0",
+    "axios": "^0.27.2",
     "dayjs": "^1.10.7",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
